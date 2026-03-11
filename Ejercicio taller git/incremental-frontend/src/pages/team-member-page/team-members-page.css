@@ -1,0 +1,345 @@
+/* ================================
+   Team Member Profile Page
+   ================================ */
+
+.member-profile {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--gap-lg) 0;
+}
+
+/* ================================
+   Profile Hero Section
+   ================================ */
+
+.profile-hero {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-xl);
+    margin-bottom: var(--gap-xl);
+    padding: 2.5rem;
+}
+
+.profile-avatar {
+    flex-shrink: 0;
+}
+
+.avatar-large {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 102, 0, 0.4);
+    box-shadow: 0 0 30px rgba(255, 102, 0, 0.5);
+}
+
+.profile-header {
+    flex: 1;
+}
+
+.profile-basic-info {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--gap-xl);
+    flex-wrap: wrap;
+}
+
+.profile-name-role {
+    flex: 0 0 auto;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.profile-role {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+.profile-tech-chips {
+    display: flex;
+    gap: var(--gap-sm);
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-top: 0.25rem;
+}
+
+.profile-description {
+    margin-top: var(--gap-lg);
+    padding-top: var(--gap-lg);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.profile-description .section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.profile-description .section-title::after {
+    display: none;
+}
+
+.profile-description .section-text {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+/* ================================
+   Profile Content Cards
+   ================================ */
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-lg);
+}
+
+.content-card {
+    padding: 2.5rem;
+    transition: var(--transition-smooth);
+}
+
+.content-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(255, 102, 0, 0.2);
+    border-color: rgba(255, 102, 0, 0.3);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--neon-orange);
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--neon-orange);
+}
+
+.section-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+}
+
+/* ================================
+   Skills Grid
+   ================================ */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-subtle);
+    transition: var(--transition-smooth);
+}
+
+.skill-item:hover {
+    background: rgba(255, 102, 0, 0.1);
+    border-color: rgba(255, 102, 0, 0.3);
+    transform: translateX(4px);
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.skill-name {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* ================================
+   Soft Skills
+   ================================ */
+
+.soft-skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+.soft-skill {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
+    padding: 0.875rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-subtle);
+    transition: var(--transition-smooth);
+}
+
+.soft-skill:hover {
+    background: rgba(255, 102, 0, 0.1);
+    border-color: rgba(255, 102, 0, 0.3);
+}
+
+.soft-skill-bullet {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.soft-skill-text {
+    font-size: 0.9375rem;
+}
+
+/* ================================
+   Hobbies Grid
+   ================================ */
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.25rem;
+}
+
+.hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-subtle);
+    transition: var(--transition-smooth);
+    text-align: center;
+}
+
+.hobby-item:hover {
+    background: rgba(255, 102, 0, 0.1);
+    border-color: rgba(255, 102, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+.hobby-icon {
+    font-size: 2rem;
+}
+
+.hobby-name {
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+@media (max-width: 768px) {
+    .member-profile {
+        padding: 1rem 0;
+    }
+    
+    .profile-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--gap-lg) var(--gap-md);
+        gap: var(--gap-lg);
+    }
+    
+    .profile-basic-info {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap-md);
+    }
+    
+    .avatar-large {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-name {
+        font-size: 2rem;
+    }
+    
+    .profile-role {
+        font-size: 1.125rem;
+    }
+    
+    .profile-tech-chips {
+        justify-content: center;
+    }
+    
+    .content-card {
+        padding: var(--gap-md);
+    }
+    
+    .section-title {
+        font-size: 1.375rem;
+    }
+    
+    .skills-grid,
+    .soft-skills-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-hero {
+        padding: var(--gap-md) 1rem;
+    }
+    
+    .avatar-large {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-name {
+        font-size: 1.75rem;
+    }
+    
+    .profile-role {
+        font-size: 1rem;
+    }
+    
+    .profile-tech-chips .chip {
+        font-size: 0.75rem;
+        padding: 0.375rem 0.75rem;
+    }
+    
+    .content-card {
+        padding: 1.25rem;
+    }
+    
+    .section-title {
+        font-size: 1.25rem;
+    }
+    
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+}

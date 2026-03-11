@@ -1,0 +1,17 @@
+{
+    "pregunta": "¿Es un animal?",
+    "si": {
+        "pregunta": "¿Ladra?",
+        "si": "Perro",
+        "no": {
+            "pregunta": "& \"C:/Program Files/Python310/python.exe\" \"c:/Users/juang/Downloads/BootCamp Python/xuangfm/pildora_final.py\"",
+            "si": "& \"C:/Program Files/Python310/python.exe\" \"c:/Users/juang/Downloads/BootCamp Python/xuangfm/pildora_final.py\"",
+            "no": "Gato"
+        }
+    },
+    "no": {
+        "pregunta": "¿Es un vegetal?",
+        "si": "Lechuga",
+        "no": "Piedra"
+    }
+}

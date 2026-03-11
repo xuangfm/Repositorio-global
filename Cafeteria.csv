@@ -1,0 +1,13 @@
+fecha,producto,categoria,precio,cantidad,metodo_pago,ciudad
+2026-02-01,Café solo,Bebida,1.40,1,Tarjeta,Madrid
+2026-02-01,Croissant,Comida,1.80,2,Efectivo,Madrid
+2026-02-02,Cappuccino,Bebida,2.20,1,Tarjeta,Barcelona
+2026-02-02,Tostada,Comida,2.50,1,Tarjeta,Barcelona
+2026-02-03,Té verde,Bebida,1.90,1,Efectivo,Valencia
+2026-02-03,Muffin,Comida,2.10,1,Tarjeta,Valencia
+2026-02-04,Café con leche,Bebida,1.70,2,Tarjeta,Madrid
+2026-02-04,Bocadillo,Comida,3.80,1,Efectivo,Madrid
+2026-02-05,Americano,Bebida,1.60,1,Tarjeta,Sevilla
+2026-02-05,Galletas,Comida,1.20,3,Efectivo,Sevilla
+2026-02-06,Cappuccino,Bebida,2.20,2,Tarjeta,Barcelona
+2026-02-06,Tostada,Comida,2.50,1,Tarjeta,Barcelona
